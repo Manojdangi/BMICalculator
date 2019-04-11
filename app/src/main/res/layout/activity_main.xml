@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="25dp"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Height"
+        android:textSize="22dp"
+
+        />
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="centimeter"
+        android:textSize="22dp"
+        android:layout_below="@+id/tv_height"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Weight"
+        android:textSize="22dp"
+        android:layout_below="@+id/et_height"
+        android:layout_marginTop="5dp"
+
+        />
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="kilogram"
+        android:textSize="22dp"
+        android:layout_below="@+id/tv_weight"
+        />
+<Button
+    android:id="@+id/btn_calculate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Compute BMI"
+    android:textSize="22dp"
+    android:layout_below="@+id/et_weight"
+
+    android:layout_marginTop="15dp"
+    />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="Your BMI is"
+        android:layout_below="@+id/btn_calculate"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
